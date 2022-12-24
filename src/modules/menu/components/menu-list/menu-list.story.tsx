@@ -1,5 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { MenuList } from '@app/modules/menu/components/menu-list/menu-list.componernt';
+import pizzaMenu from '@app/mocks/pizza.json'
+
 
 export default {
 	title: 'Menu/Menu List',
@@ -13,5 +15,5 @@ const Template: ComponentStory<typeof MenuList> = (args: any) => <MenuList {...a
 
 export const View = Template.bind({});
 View.args = {
-
+	items: pizzaMenu
 }
